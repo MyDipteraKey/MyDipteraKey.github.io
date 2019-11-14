@@ -1,0 +1,381 @@
+
+body { 
+    display: block;
+    margin: 0px;
+	height: 100vh;
+	width: 100vw;
+	font-size: 1vw;	
+	overflow: hidden;
+}
+
+#framecontentLeft{ 
+	position: relative; 
+	left: 0; 
+	top: 0; 
+	width: 15%;
+	height: 100%;
+	background-color: lightblue;
+	z-index: 99;
+}
+
+#MyDiptera{
+	position: relative;
+	width: 85%;
+	height: 2.5vw;
+	min-height: 20px;
+	top: 1vw;
+	left: 5%;
+    background-color: lightyellow;
+    box-shadow: 0.7vw 0.7vw 0.35vw #888888;
+	border-radius: 0.7vw;
+	border: 0.2vw solid;
+	font: italic bold 200%/120% Georgia, serif;
+	text-align: center;
+}
+
+#donate{
+	position: absolute; 
+	left: 1vw;
+	bottom: 4vw; 
+	height: 15vw;
+	width: 90%;
+	overflow: auto; 
+	border: 0;
+	font-size: 120%;
+	text-align: center;
+}
+
+#copyright{
+	position: absolute; 
+	left: 1vw;
+	bottom: 1vw; 
+	height: 4vw;
+	width: 90%;
+	border: 0;
+	font-size: 90%;
+	text-align: center;
+	font-weight:bold;
+}
+#maincontent{
+	position: fixed; 
+	left: 15%;
+	top: 0; 
+	right: 0;
+	height: 100%;
+	width: 85%;
+	background: #fff;
+}
+.shortcuts{
+    position:relative;
+	top: 0.6vw;
+	left:3vw;
+    width:8vw;
+	padding: 0;
+	background-color:lightgreen;
+	box-shadow: 0.15vw 0.15vw 0.1vw #888888;
+	border-radius: 0.7vw;
+	border: 0.1vw solid;
+	font-size: 90%;
+}
+
+.shortcuts li{
+    list-style:none outside none;
+    padding:0.15vw 0.1vw;
+    text-align:center; 
+}
+
+.shortcuts li:hover{
+    background-color:red;
+    color:yellow;
+    font-weight:bold;
+    opacity:1;
+	border-radius: 0.7vw;
+}
+
+.shortcuts li ul{ 
+    display:none; 
+    position:absolute;
+    right:-110%;
+	top: -50%;	
+	padding: 0;
+	width: 9vw;
+	z-index: 1;
+}
+
+.shortcuts li ul.two-columns{ 
+    display:none; 
+    position:relative;
+    right:-175%;
+	top: -3640%;	
+	padding: 0;
+	width: 9vw;
+	z-index: 1;
+}
+
+.shortcuts li ul li ul{ 
+    display:none; 
+    position:relative;
+    right:-70%;
+	top: -300%;	
+	padding: 0;
+	width: 9vw;
+	z-index: 1;
+}
+
+.shortcuts li ul li ul li ul{ 
+    display:none; 
+    position:relative;
+    right:-70%;
+	top: -300%;	
+	padding: 0;
+	width: 9vw;
+	z-index: 1;
+}
+
+.shortcuts li ul li ul li ul li ul{ 
+    display:none; 
+    position:relative;
+    right:-70%;
+	top: -300%;	
+	padding: 0;
+	width: 9vw;
+	z-index: 1;
+}
+
+.shortcuts li ul li ul li ul li ul li ul li ul{ 
+    display:none; 
+    position:relative;
+    right:-70%;
+	top: -300%;	
+	padding: 0;
+	width: 9vw;
+	z-index: 1;
+}
+
+.shortcuts li:hover > ul{
+    display:block;
+    opacity:1;
+}
+
+.shortcuts li ul li{
+	border: 0.1vw solid black;
+	border-radius: 0px;
+	background-color:lightgreen;
+	height: 15px;
+}		 
+
+.shortcuts li ul li a{
+    color:#000;
+}
+
+.shortcuts li ul li a:hover{
+    background-color:red;
+    color:yellow;
+}
+
+.shortcuts ul:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+.home{
+    position:relative;
+	top: 0.2vw;
+	left:2.5vw;
+    width:8vw;
+	padding: 0;
+	background-color:lightgreen;
+	box-shadow: 0.15vw 0.15vw 0.1vw #888888;
+	border-radius: 0.7vw;
+	border: 0.1vw solid;
+}
+
+.home li{
+    list-style:none outside none;
+    padding:0.35vw 0.1vw;
+    text-align:center;  
+}
+
+.home li:hover{
+    background-color:red;
+    color:yellow;
+    font-weight:bold;
+    text-decoration:underline;
+    opacity:1;
+	border-radius: 0.7vw;
+}
+
+.revhistory{
+    position:relative;
+	top: 0.2vw;
+	left:2.5vw;
+    width:8vw;
+	padding: 0;
+	background-color:lightgreen;
+	box-shadow: 0.15vw 0.15vw 0.1vw #888888;
+	border-radius: 0.7vw;
+	border: 0.1vw solid;
+}
+
+.revhistory li{
+    list-style:none outside none;
+    padding:0.35vw 0.1vw;
+    text-align:center;  
+}
+
+.revhistory li:hover{
+    background-color:red;
+    color:yellow;
+    font-weight:bold;
+    text-decoration:underline;
+    opacity:1;
+	border-radius: 0.7vw;
+}
+
+.links{
+    position:relative;
+	top: 0.2vw;
+	left:2.5vw;
+    width:8vw;
+	padding: 0;
+	background-color:lightgreen;
+	box-shadow: 0.15vw 0.15vw 0.1vw #888888;
+	border-radius: 0.7vw;
+	border: 0.1vw solid;
+}
+
+.links li{
+    list-style:none outside none;
+    padding:0.35vw 0.1vw;
+    text-align:center;  
+}
+
+.links li:hover{
+    background-color:red;
+    color:yellow;
+    font-weight:bold;
+    text-decoration:underline;
+    opacity:1;
+	border-radius: 0.7vw;
+}
+
+.links li ul{ 
+    display:none; 
+    position:absolute;
+    right:-115%;
+	top: -30%;	
+	padding: 0;
+	width: 11vw;
+}
+
+.links li:hover ul{
+    display:block;
+    opacity:1;
+}
+
+.links li ul li{
+	border: 0.1vw solid black;
+	border-radius: 0px;
+	background-color:lightgreen;
+}		 
+
+.links li ul li a{
+    color:#000;
+}
+
+.links li ul li a:hover{
+    background-color:red;
+    color:yellow;
+    text-decoration:underline;
+}
+
+.links ul:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+		overflow-x: scroll; 
+    }
+	#framecontentLeft{ 
+		min-width: 115px;
+	}
+	#MyDiptera{
+		font: italic bold 15px Georgia, serif;
+		top: 5px;
+	}
+	#copyright{
+		font-size: 6px;
+		min-height: 25px;
+		left: 6px;
+		bottom: 35px; 
+		}
+	#donate{
+		font-size: 8px;
+		min-height: 96px;
+		left: 6px;
+		bottom: 25px; 	
+	}
+	.shortcuts{
+		top: 5px;
+		left: 21px;
+		width: 72px;
+		height: 15px;
+		font-size: 8px;
+	}
+	.shortcuts li ul{ 
+		width: 72px;
+	}
+	.links{
+		top: 3px;
+		left: 26px;
+		width: 60px;
+		height: 13px;
+		font-size: 7px;
+	}
+	.links li ul{ 
+		width: 72px;
+	}
+	.home{
+		top: 5px;
+		left: 26px;
+		width: 60px;
+		height: 13px;
+		font-size: 7px;
+	}
+	.revhistory{
+		top: 1px;
+		left: 26px;
+		width: 60px;
+		height: 13px;
+		font-size: 7px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	#copyright{
+		font-size: 8.5px;
+		height: 30px;
+		left: 12px;
+		bottom: 35px; 
+		}
+	#donate{
+		font-size: 11px;
+		height: 130px;
+		left: 12px;
+		bottom: 38px; 	
+	}
+}
+
+@media screen and (max-height: 400px) {
+    body {
+		overflow-y: scroll; 
+		height: 400px;
+    }
+	#framecontentLeft{ 
+		height: 400px;
+	}
+}
